@@ -33,7 +33,7 @@ export const authOptions: NextAuthOptions = {
       
         if (!res.ok) return null;
       
-        // type guard بسيط بدون any
+      
         if (!payload || typeof payload !== "object") return null;
         const p = payload as Record<string, any>;
       
